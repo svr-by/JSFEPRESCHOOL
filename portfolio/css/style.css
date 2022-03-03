@@ -136,7 +136,7 @@ body {
     font-size: 20px;
     line-height: 40px;
 }
-.hero-button {
+.button-hero {
     width: 220px;
     height: 55px;
     font-family: inherit;
@@ -148,8 +148,8 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
-.hero-button:hover,
-.hero-button:focus {
+.button-hero:hover,
+.button-hero:focus {
     color: #FFFFFF;
 }
 /* hero styles end*/
@@ -189,19 +189,15 @@ body {
 }
 .skill-item:nth-child(1){
     background-image: url(../assets/svg/camera_1.svg);
-
 }
 .skill-item:nth-child(2){
     background-image: url(../assets/svg/video_1.svg);
-
 }
 .skill-item:nth-child(3){
     background-image: url(../assets/svg/retouch_1.svg);
-
 }
 .skill-item:nth-child(4){
     background-image: url(../assets/svg/mic_1.svg);
-
 }
 .skill-title {
     padding: 100px 20px 20px 20px;
@@ -225,3 +221,43 @@ body {
     color: #FFFFFF;
 }
 /* skills styles end*/
+/* portfolio styles start*/
+.porfolio-btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    gap: 5px;
+}
+.button-portfolio {
+    width: 220px;
+    height: 55px;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 40px;
+    color: #BDAE82;
+    background: #000000;
+    border: 2px solid #BDAE82;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button-portfolio:hover {
+    color: #FFFFFF;
+}
+.button-portfolio:active,
+.button-portfolio:focus {
+    color: #000000;
+    background: #BDAE82;
+    border: 0;
+}
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px
+}
+.portfolio-item {
+    width: 450px;
+    height: 560px;
+    image-rendering: crisp-edges;
+}
+/* portfolio styles end*/
