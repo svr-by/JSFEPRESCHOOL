@@ -68,9 +68,9 @@ body {
     background-repeat: no-repeat;
     transition: 0.3s; 
 }
-.header-logo:hover {
-    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-    contrast(87%);
+.header-logo:hover,
+.header-logo:active {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 .header-nav {
     margin-left: auto;
@@ -155,7 +155,7 @@ body {
 /* hero styles end*/
 
 /* skills styles start*/
-.title-continer {
+.title-container {
     width: 50%;
     margin: 0 auto;
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
@@ -261,3 +261,21 @@ body {
     image-rendering: crisp-edges;
 }
 /* portfolio styles end*/
+/* video styles start*/
+.video-player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-player-btn {
+    position: absolute;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.video-player-btn:hover,
+.video-player-btn:active,
+.video-player-btn:focus {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+/* video styles end*/
