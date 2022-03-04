@@ -280,6 +280,7 @@ body {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 /* video styles end*/
+
 /* price styles start*/
 .price-items {
     display: flex;
@@ -331,3 +332,64 @@ body {
     text-align: center;
 }
 /* price styles end*/
+
+/* contacts styles start*/
+.contacts .container {
+    background-image: url(../assets/img/contacts-bg.jpg);
+    /* background-size: auto 700px; */
+    /* background-position: center center; */
+    height: 700px;
+}
+.contacts-form-container {
+    float: right;
+    padding-top: 60px;
+    width: 450px;
+}
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+}
+.contacts-title {
+    margin: 0 0 40px 0;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+    color: #BDAE82;
+}
+.form-item {
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid #BDAE82;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    color: #BDAE82;
+    background: rgba(0, 0, 0, 0.5);
+}
+textarea.form-item {
+    height: 100px;
+    margin-bottom: 30px;
+    resize: none;
+}
+.form-item:focus {
+    outline: none;
+}
+.form-item::placeholder {
+    font-family: inherit;
+    font-size: 20px;
+    color: #BDAE82;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #bdae82;
+  transition: background-color 0s ease-in-out 9000s;
+}
+/* contacts styles end*/
