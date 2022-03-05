@@ -393,3 +393,55 @@ input:-webkit-autofill:active {
   transition: background-color 0s ease-in-out 9000s;
 }
 /* contacts styles end*/
+
+/* footer styles start*/
+.footer-container {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+}
+.footer-container a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+.footer-container a:hover {
+    color: #BDAE82;
+}
+.footer-data span {
+    margin-right: 20px;
+}
+.social-list {
+    display: flex;
+}
+.social-list a {
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.footer-inst {
+    background-image: url(../assets/svg/inst_1.svg);
+}
+.footer-fb {
+    background-image: url(../assets/svg/fb_1.svg);
+}
+.footer-twit {
+    background-image: url(../assets/svg/tw_1.svg);
+}
+.footer-pin {
+    background-image: url(../assets/svg/pinterest_1.svg);
+}
+.social-list a:hover, 
+.social-list a:active,
+.social-list a:focus {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+/* footer styles end*/
