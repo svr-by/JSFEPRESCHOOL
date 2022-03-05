@@ -225,6 +225,7 @@ body {
     color: #FFFFFF;
 }
 /* skills styles end*/
+
 /* portfolio styles start*/
 .porfolio-btns {
     display: flex;
@@ -265,6 +266,7 @@ body {
     image-rendering: crisp-edges;
 }
 /* portfolio styles end*/
+
 /* video styles start*/
 .video-player {
     position: relative;
@@ -437,9 +439,15 @@ input:-webkit-autofill:active {
     list-style: none;
     margin-left: 20px;
 }
+.social-list a {
+    font-size: 32px;
+}
 .social-list a:hover, 
 .social-list a:active,
 .social-list a:focus {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+.social-list img {
+    vertical-align: middle;
 }
 /* footer styles end*/
