@@ -60,7 +60,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
     height: 90px;
 }
 .header-logo {
@@ -114,11 +113,11 @@ body {
 /* header styles end*/
 
 /* hero styles start*/
-.hero-continer {
+.hero-container {
     background-image: url(../assets/img/hero-bg.jpg);
     background-position: center -90px;
     background-repeat: no-repeat;
-    min-height: calc(910px - 90px);
+    height: calc(910px - 90px);
 }
 .hero-block {
     padding-top: calc(250px - 90px);
@@ -133,7 +132,7 @@ body {
     line-height: 120px;
 }
 .hero-text {
-    width: 400px;
+    max-width: 400px;
     margin: 0 0 25px 0;
     font-weight: normal;
     font-size: 20px;
@@ -186,8 +185,6 @@ body {
     max-width: 320px;
     margin: 20px;
     padding: 0 20px 8px 20px;
-}
-.skill-item {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 62px 50px;
@@ -230,7 +227,9 @@ body {
 /* portfolio styles start*/
 .porfolio-btns {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
     margin-bottom: 60px;
     gap: 5px;
 }
@@ -283,21 +282,25 @@ body {
     justify-content: center;
     align-items: center;
 }
-.video-player-btn {
-    width: 138px;
-    height: 138px;  
+.video-player__img {
+    width: 100%;
+}
+.video-player__button {
+    width: 10%;
+    height: 150px;  
     padding: 0;
     border: 0;
     background-color: transparent;
     background-image: url(../assets/svg/Play_hover.svg);
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: contain;
     position: absolute;
     transition: 0.3s;
     cursor: pointer;
 }
-.video-player-btn:hover,
-.video-player-btn:active {
+.video-player__button:hover,
+.video-player__button:active {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 /* video styles end*/
@@ -306,6 +309,7 @@ body {
 .price-items {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 100px;
     gap: 25px;
 }
@@ -357,10 +361,8 @@ body {
 /* price styles end*/
 
 /* contacts styles start*/
-.contacts .container {
+.contacts-container {
     background-image: url(../assets/img/contacts-bg.jpg);
-    /* background-size: auto 700px; */
-    /* background-position: center center; */
     height: 700px;
 }
 .contacts-form-container {
@@ -439,7 +441,7 @@ input:-webkit-autofill:active {
 }
 
 .footer-container__text {
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .social-list {
@@ -451,7 +453,7 @@ input:-webkit-autofill:active {
 .social-list__item {
     list-style: none;
     width: 32px;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 .social-list__img {
     display: block;
@@ -465,3 +467,57 @@ input:-webkit-autofill:active {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 /* footer styles end*/
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 728px;
+        padding: 0;
+    }
+    .header-container {
+        background-size: auto 590px;        
+        padding: 0 60px;
+    }
+    .header-nav {
+        display: none;
+    }
+    .hero-container {
+        background-position: center -90px;
+        background-size: auto 590px;
+        height: calc(590px - 90px);
+    }
+    .hero-block {
+        padding-top: calc(168px - 90px);
+        margin-left: 60px;
+    }
+    .hero-title {
+        margin: 0 0 20px 0;
+        font-size: 32px;
+        line-height: 64px;
+    }
+    .hero-text {
+        margin: 0 0 60px 0;
+        padding-right: 10px;
+        line-height: 24px;
+    }
+    .title-container {
+        background-image: linear-gradient(to top, var(--color-black) 19px, var(--color-gold) 19px, var(--color-gold) 21px, var(--color-black) 21px);
+    }
+    .section-title {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 50px;
+    }
+    .skill-item {
+        max-width: 300px;
+        padding: 0 10px 40px 10px;
+    }
+    .skill-title {
+        padding: 80px 10px 20px 10px;
+    }
+    .skill-text {
+        line-height: 22px;
+    }
+    .porfolio-btns {
+        width: 445px;
+    }
+}
