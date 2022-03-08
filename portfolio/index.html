@@ -78,12 +78,24 @@
                 <button class="button-portfolio">Autumn</button>
             </div>
             <div class="portfolio-items">
-                <img src="assets/img/portfolio-img1.jpg" alt="photo" class="portfolio-item">
-                <img src="assets/img/portfolio-img2.jpg" alt="photo" class="portfolio-item">
-                <img src="assets/img/portfolio-img3.jpg" alt="photo" class="portfolio-item">
-                <img src="assets/img/portfolio-img4.jpg" alt="photo" class="portfolio-item">
-                <img src="assets/img/portfolio-img5.jpg" alt="photo" class="portfolio-item">
-                <img src="assets/img/portfolio-img6.jpg" alt="photo" class="portfolio-item">
+                <div class="portfolio-item">
+                    <img src="assets/img/portfolio-img1.jpg" alt="photo" class="portfolio-item__img">
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/img/portfolio-img2.jpg" alt="photo" class="portfolio-item__img">
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/img/portfolio-img3.jpg" alt="photo" class="portfolio-item__img">
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/img/portfolio-img4.jpg" alt="photo" class="portfolio-item__img">
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/img/portfolio-img5.jpg" alt="photo" class="portfolio-item__img">
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/img/portfolio-img6.jpg" alt="photo" class="portfolio-item__img">
+                </div>
             </div>
         </div>
     </section>
@@ -117,7 +129,7 @@
                     <button class="button-hero">Order shooting</button>
                 </div>
                 <div class="price-item">
-                    <h3 class="price-title">Standard</h3>
+                    <h3 class="price-title">Premium</h3>
                     <p class="item-price">700 $</p>
                     <div class="item-options">
                         <span class="item-option">One or two locations</span>
@@ -157,21 +169,37 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="container">
-            <div class="footer-container">
+        <div class="container footer-container">
                 <div class="footer-data">
-                    <span>&#169;</span>
-                    <span>2022</span>
-                    <a href="https://github.com/svr-by"><span>github</span></a>
+                    <span class="footer-container__text">&#169;</span>
+                    <span class="footer-container__text">2022</span>
+                    <a href="https://github.com/svr-by" class="footer-container__link">
+                        <span class="footer-container__text">github</span>
+                    </a>
                 </div>
-                <a href="https://rs.school/js-stage0/" class="rss">Rolling Scopes School</a>
+                <a href="https://rs.school/js-stage0/" class="footer-container__link">Rolling Scopes School</a>
                 <ul class="social-list">
-                    <li><a href="#"><img src="assets/svg/inst_1.svg" alt="instagram"></a></li>
-                    <li><a href="#"><img src="assets/svg/fb_1.svg" alt="facebook"></a></li>
-                    <li><a href="#"><img src="assets/svg/tw_1.svg" alt="twiter"></a></li>
-                    <li><a href="#"><img src="assets/svg/pinterest_1.svg" alt="pinterest"></a></li>
+                    <li class="social-list__item">
+                        <a href="#" class="footer-container__link">
+                            <img src="assets/svg/inst_1.svg" alt="instagram" class="social-list__img">
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#" class="footer-container__link">
+                            <img src="assets/svg/fb_1.svg" alt="facebook" class="social-list__img">
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#" class="footer-container__link">
+                            <img src="assets/svg/tw_1.svg" alt="twiter" class="social-list__img">
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#" class="footer-container__link">
+                            <img src="assets/svg/pinterest_1.svg" alt="pinterest" class="social-list__img">
+                        </a>
+                    </li>
                 </ul>
-            </div>
         </div>
     </footer>
 </body>
