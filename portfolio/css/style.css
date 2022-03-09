@@ -309,6 +309,7 @@ body {
 .price-items {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 100px;
     gap: 25px;
@@ -319,7 +320,6 @@ body {
     align-items: center;
     padding: 43px;
     width: 450px;
-    /* height: 505px; */
     border: 3px solid var(--color-gold);
     text-align: center;
 }
@@ -331,7 +331,6 @@ body {
     line-height: 56px;
     text-align: center;
     margin: 0;
-    /* margin-top: 43px; */
     margin-bottom: 20px;
 }
 .item-price {
@@ -363,6 +362,8 @@ body {
 /* contacts styles start*/
 .contacts-container {
     background-image: url(../assets/img/contacts-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 700px;
 }
 .contacts-form-container {
@@ -435,6 +436,7 @@ input:-webkit-autofill:active {
     text-decoration: none;
     color: #FFFFFF;
     transition: 0.3s;
+    /* line-height: 50px; */
 }
 .footer-container__link:hover {
     color: var(--color-gold);
@@ -442,6 +444,7 @@ input:-webkit-autofill:active {
 
 .footer-container__text {
     margin-left: 20px;
+    /* line-height: 50px; */
 }
 
 .social-list {
@@ -449,6 +452,7 @@ input:-webkit-autofill:active {
     align-items: center;
     margin: 0;
     padding: 0;
+    height: 50px;
 }
 .social-list__item {
     list-style: none;
@@ -519,5 +523,34 @@ input:-webkit-autofill:active {
     }
     .porfolio-btns {
         width: 445px;
+    }
+    .price-items {
+        flex-direction: column;
+        margin-bottom: 80px;
+        gap: 50px;
+    }
+    .price-item {
+        width: 420px;
+    }
+    .contacts-container {
+        background-position: -225px 0;
+        height: 600px;
+    }
+    .contacts-form-container {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .contacts-form-container .button-hero {
+        align-self: center;
+    }
+    .footer-container {
+        flex-direction: column;
+        padding: 28px 0;
+    }
+    .footer-container__text {
+        margin: 0 10px;
+    }
+    .social-list__item {
+        margin: 0 10px;
     }
 }
