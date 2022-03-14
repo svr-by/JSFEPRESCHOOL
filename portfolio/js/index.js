@@ -7,12 +7,14 @@ const navList = document.querySelector('.nav-list');
 function toggleMenu () {
     hamburger.classList.toggle('open');
     headerNav.classList.toggle('open');
+    navList.classList.toggle('open');
 }
 
 function closeMenu() {
     if (event.target.classList.contains('item-link')) {
         hamburger.classList.remove('open');
         headerNav.classList.remove('open');
+        navList.classList.remove('open');
     }
 }
 
